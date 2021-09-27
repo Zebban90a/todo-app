@@ -1,0 +1,7 @@
+<form action="/item/{{item.id}}" method="POST">
+  <label for="titel">Titel:</label>
+  <input type="text" name="titel" value="{{item.title}}"></input> <br /><br />
+  <label for="body">Att göra:</label>
+  <textarea type="text" name="todo">{{item.body}}</textarea> <br /><br />
+  <input type="submit" value="Uppdatera" />
+</form>

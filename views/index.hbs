@@ -1,0 +1,19 @@
+<h1>{{title}}</h1>
+<ul>
+    {{#each items}}
+    <a href="/item/{{this.id}}"><li>{{this.title}} </li></a>
+    <form method="GET" action="/delete/{{this.id}}">
+    <input type="submit" value="Delete" />
+    </form>
+    {{/each}}
+</ul>
+
+<form method="POST" action="/item">
+<label for="titel">Titel:</label>
+  <input type="text" name="titel" ></input> <br /><br />
+  <label for="body">Att göra:</label>
+  <textarea type="text" name="todo"></textarea> <br /><br />
+  <input type="submit" value="Lägg till" />
+
+</form>
+
